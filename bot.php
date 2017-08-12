@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 
                 $messages = [
                     'type' => 'text',
-                    'text' => 'ครับ!! ตอนนี้ผมปั่นงานอยู่ ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม เลยครับ'
+                    'text' => 'ครับ!! ตอนนี้ผมปั่นงานอยู่ ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณม เลยครับ'
                 ];
 
             }elseif ($text == 'ideabranch'){
@@ -37,11 +37,14 @@ if (!is_null($events['events'])) {
                     'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม'
                 ];
 
-            }elseif ($text == 'ideabranch'){
+            }elseif (strtolower($text) == 'lcoation'){
                 
                                 $messages = [
-                                    'type' => 'text',
-                                    'text' => 'ครับ!! ตอนนี้ผมปั่นงานอยู่ ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม เลยครับ'
+                                    'type': 'location',
+                                    'title': 'IDEA BRANCH',
+                                    'address': '50 GMM Grammy PLACE, 12th Floor Rd. (Asoke), Khlongtoeinuea,Wattana, 21 Sukhumvit Rd, Khlong Toei, Krung Thep Maha Nakhon 10110',
+                                    'latitude': 13.7433933,
+                                    'longitude': 100.5630251
                                 ];
                 
              } else {
