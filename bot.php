@@ -16,8 +16,8 @@ if (!is_null($events['events'])) {
 			// Get replyToken
             $replyToken = $event['replyToken'];
             
-
-            if ($event['text'] == 'สวัสดี' || 'หวัดดี' || 'hello' || 'hi' || 'ดีจ้า' || 'ดี'){
+            if ($text['text'] == 'สวัสดี' || 'หวัดดี' || 'hello' || 'hi' || 'ดีจ้า' || 'ดี'){
+                echo $text;
                 $messages = [
                     'type' => 'text',
                     'text' => 'สวัสดีครับ งานยังไม่เสร็จครับ ขอเลื่อนเป็นพรุ่งนี้ได้ไหมครับ T^T'
@@ -29,6 +29,7 @@ if (!is_null($events['events'])) {
                     'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม'
                 ];
             } else {
+
                 // Build message to reply back
                 $messages = [
                     'type' => 'text',
