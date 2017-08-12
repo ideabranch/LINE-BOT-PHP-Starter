@@ -16,17 +16,19 @@ if (!is_null($events['events'])) {
 			// Get replyToken
             $replyToken = $event['replyToken'];
             
-            if ($event['text'] = 'สวัสดี' || 'หวัดดี' || 'hello' || 'hi' || 'ดีจ้า'){
+
+            if ($event['text'] == 'สวัสดี' || 'หวัดดี' || 'hello' || 'hi' || 'ดีจ้า' || 'ดี'){
                 $messages = [
                     'type' => 'text',
                     'text' => 'สวัสดีครับ งานยังไม่เสร็จครับ ขอเลื่อนเป็นพรุ่งนี้ได้ไหมครับ T^T'
                 ];
-            }elseif ($event['text'] = 'ideabranch'){
+
+            }elseif ($event['text'] == 'ideabranch'){
                 $messages = [
                     'type' => 'text',
                     'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม'
                 ];
-            } else{
+            } else {
                 // Build message to reply back
                 $messages = [
                     'type' => 'text',
