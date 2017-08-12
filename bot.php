@@ -37,14 +37,12 @@ if (!is_null($events['events'])) {
                     'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม'
                 ];
 
-            }elseif (strtolower($text) == 'location'){
+            }elseif (strtolower($text) == 'คุณแจน'){
                 
                  $messages = [
-                        'type' => 'location',
-                        'title' => 'IDEA BRANCH',
-                        'address' => '50 GMM Grammy PLACE, 12th Floor Rd. (Asoke), Khlongtoeinuea,Wattana, 21 Sukhumvit Rd, Khlong Toei, Krung Thep Maha Nakhon 10110',
-                        'latitude' => 13.7433933,
-                        'longitude' => 100.5630251     
+                        'type' => 'image',
+                        'originalContentUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-9.png',
+                        'previewImageUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-9.png'
                 ];
                 
              } else {
