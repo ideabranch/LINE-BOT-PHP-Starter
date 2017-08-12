@@ -45,6 +45,29 @@ if (!is_null($events['events'])) {
                         'previewImageUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-9.png'
                 ];
                 
+             }elseif ($text == 'คุณอาร์ท'){
+                
+                 $messages = [
+                        'type' => 'image',
+                        'originalContentUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-3.png',
+                        'previewImageUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-3.png'
+                ];
+                
+             }elseif ($text == 'คุณวี'){
+                
+                 $messages = [
+                        'type' => 'image',
+                        'originalContentUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-2.png',
+                        'previewImageUrl' => 'https://ideabranch.co.th/img/team/ideabranc-team-2.png'
+                ];
+                
+             }elseif ($text == 'คุณเม'){
+                
+                 $messages = [
+                    'type' => 'text',
+                    'text' => 'ทวงเงินลูกค้าด้วยครับ'
+                ];
+                
              } else {
 
                 // Build message to reply back
