@@ -37,7 +37,7 @@ if (!is_null($events['events'])) {
                     'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม'
                 ];
 
-            }elseif (strtolower($text) == 'lcoation'){
+            }elseif (strtolower($text) == 'location'){
                 
                                 $messages = [
                                     'type': 'location',
