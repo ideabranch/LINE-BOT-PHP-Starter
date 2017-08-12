@@ -15,12 +15,23 @@ if (!is_null($events['events'])) {
 			$text = $event['message']['text'];
 			// Get replyToken
 			$replyToken = $event['replyToken'];
-
-			// Build message to reply back
-			$messages = [
-				'type' => 'text',
-				'text' => 'งานเสร็จหรือยัง?'
-			];
+            if ($event['text'] = 'สวัสดี' || 'หวัดดี' || 'hello' || 'hi' || 'ดีจ้า'){
+                $messages = [
+                    'type' => 'text',
+                    'text' => 'สวัสดีครับ งานยังไม่เสร็จครับ ขอเลื่อนเป็นพรุ่งนี้ได้ไหมครับ T^T'
+                ];
+            }else if ($event['text'] = 'ideabranch'){
+                $messages = [
+                    'type' => 'text',
+                    'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ ติดต่อคุณแพรเลยครับ'
+                ];
+            } else{
+                // Build message to reply back
+                $messages = [
+                    'type' => 'text',
+                    'text' => $text
+                ];
+            }
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
