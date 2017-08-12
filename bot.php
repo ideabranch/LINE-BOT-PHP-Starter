@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			// Get replyToken
 			$replyToken = $event['replyToken'];
             
-            if ($text == 'สวัสดี' || 'หวัดดี' || 'hello' || 'hi' || 'ดีจ้า' || 'ดี'){
+            if ($text == 'สวัสดี'){
 
                 $messages = [
                     'type' => 'text',
@@ -24,7 +24,7 @@ if (!is_null($events['events'])) {
                 ];
 
             }elseif ($text == 'ideabranch'){
-                
+
                 $messages = [
                     'type' => 'text',
                     'text' => 'ตอนนี้บอทยังไม่เก่ง ถ้าสนใจจ้างไอเดียบรานช์ติดต่อคุณแพร ถ้าเรื่องเงินๆ ทองๆ ต้องคุณแม'
