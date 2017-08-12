@@ -23,7 +23,7 @@ if (!is_null($events['events'])) {
                     'text' => 'งานยังไม่เสร็จครับ! ขอเลื่อนเป็นพรุ่งนี้ได้ไหมครับ T^T'
                 ];
 
-            }elseif ($text == 'ideabranch'){
+            }elseif (strtolower($text) == 'ideabranch'){
 
                 $messages = [
                     'type' => 'text',
