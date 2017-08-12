@@ -68,6 +68,20 @@ if (!is_null($events['events'])) {
                     'text' => 'ทวงเงินลูกค้าด้วยครับ'
                 ];
                 
+             }elseif ($text == 'คุณแพร'){
+                
+                 $messages = [
+                    'type' => 'text',
+                    'text' => 'วันนี้ไปร้านไหนดีครับ?'
+                ];
+                
+             }elseif ($text == 'คุณปอนด์'){
+                
+                 $messages = [
+                    'type' => 'text',
+                    'text' => '...'
+                ];
+                
              } else {
 
                 // Build message to reply back
